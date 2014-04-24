@@ -29,6 +29,7 @@ header {
     min-width: 600px;
     width: 50%;
     margin: 0 auto;
+    padding-bottom: 25px;
 }
 #posts a {
     text-decoration: underline;

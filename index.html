@@ -6,7 +6,7 @@ title: Codebyte Stuidos - Game Development Studio
     <h1>Blog Posts</h1>
     {% for posts in site.posts %}
         <h3>{{posts.title}}</h3>
-        <h4>Date Posted: {{posts.date | date: "%B %d, %Y"}}</h4>
+        <h4>{{posts.date | date: "%B %d, %Y"}}</h4>
         <p>{{posts.excerpt}}</p>
         <a href="{{posts.url}}">Read More...</a>
         <br />
