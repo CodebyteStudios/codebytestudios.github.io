@@ -26,6 +26,7 @@ header {
 }
 #posts {
     text-align: justify;
+    min-width: 600px;
     width: 50%;
     margin: 0 auto;
 }
@@ -36,4 +37,7 @@ header {
 #posts h1 {
     text-align: center;
     color: rgb(255, 255, 255);
+}
+.fb-comments {
+    margin: 0 auto;
 }
