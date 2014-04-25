@@ -1,3 +1,4 @@
 markdown: redcarpet
 baseurl: /
 exclude: ['README.md']
+paginate: 5

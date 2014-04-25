@@ -1,9 +1,8 @@
 .navi {
-    float: right;
     line-height: 100px;
 }
 .navi a{
-    float: left;
+    display: inline-block;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'Roboto', sans-serif;

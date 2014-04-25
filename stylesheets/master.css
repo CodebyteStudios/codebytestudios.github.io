@@ -8,7 +8,11 @@ textarea {
     resize: none;
 }
 header {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(30, 30, 30);
     margin: 0 auto;
+    margin-bottom: 40px;
     height: 100px;
     width: auto;
 }
@@ -28,11 +32,13 @@ header {
     margin:auto;
 }
 #posts {
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
     text-align: justify;
     min-width: 600px;
     width: 50%;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding: 25px;
 }
 #posts a {
     text-decoration: underline;
@@ -41,7 +47,4 @@ header {
 #posts h1 {
     text-align: center;
     color: rgb(255, 255, 255);
-}
-.fb-comments {
-    margin: 0 auto;
 }
