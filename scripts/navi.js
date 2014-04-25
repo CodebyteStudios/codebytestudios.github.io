@@ -1,5 +1,5 @@
 window.onload = function currentPage() {
-    page = window.location.pathname;
+    var page = window.location.pathname;
     if(page == "/index.html") {
         document.getElementById("home").style.color="#30ACFF";
         document.getElementById("home").style.boxShadow="inset 0 0 15px rgba(0,0,0,0.5)";
@@ -24,4 +24,4 @@ window.onload = function currentPage() {
         document.getElementById("contact").style.color="#30ACFF";
         document.getElementById("contact").style.boxShadow="inset 0 0 15px rgba(0,0,0,0.5)";
     }
-}
+};
