@@ -5,11 +5,9 @@ $('#ajax-form').submit(function(){
           data: $('#ajax-form').serialize() 
         }).done(function() {
             var form = document.getElementById("ajax-form");
-            setTimeout("hide()", 5000);
-            //callback which can be used to show a thank you message
-            //and reset the form
-            document.getElementById("thank_you").style.display="visible";
+            document.getElementById("thank_you").style.display="block";
             form.reset();
+            setTimeout("hide()", 5000);
             function hide() {
                 document.getElementById("thank_you").style.display="none";
             }
