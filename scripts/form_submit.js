@@ -7,10 +7,7 @@ $('#ajax-form').submit(function(){
             var form = document.getElementById("ajax-form");
             document.getElementById("thank_you").style.display="block";
             form.reset();
-            /*setTimeout("hide()", 5000);
-            function hide() {
-                document.getElementById("thank_you").style.display="none";
-            }*/
+            setTimeout(function(){alert("Hello")},3000);
         });
         return false; //to stop the form from submitting
       });

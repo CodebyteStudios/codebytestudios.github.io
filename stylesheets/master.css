@@ -25,13 +25,6 @@ header {
     margin-right: 20px;
     color: rgb(255, 255, 255);
 }
-#logo {
-    position: absolute;
-    left:0;
-    right:0;
-    top:100;
-    margin:auto;
-}
 #posts {
     background-color: rgb(40, 40, 40);
     box-shadow: 0 0 15px rgba(0, 0, 0, .5);
@@ -42,12 +35,45 @@ header {
     padding: 25px;
 }
 #posts a {
+    z-index: 1;
     text-decoration: underline;
     color: rgb(255, 255, 255);
 }
 #posts h1 {
+    z-index: 1;
     text-align: center;
     color: rgb(255, 255, 255);
+}
+#posts p {
+    z-index: 1;
+}
+h4.date-header {
+	position: relative;
+	left: -10px;
+	width: 30%;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 7px 20px 7px 25px;
+	margin: 0 10px 25px -30px;
+	color: #555;
+	background-color: #eee;
+	text-shadow: 0px 1px 2px #bbb;
+	-webkit-box-shadow: 0px 2px 4px #888;
+	-moz-box-shadow: 0px 2px 4px #888;
+	box-shadow: 0px 2px 4px #888;
+}
+h4:before, h4:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+h4.date-header:after {
+	left: 0;
+	top: 100%;
+	border-width: 7px 7px;
+	border-style: solid;
+	border-color: #666 #666 transparent transparent;
 }
 #thank_you {
     display: none;
@@ -61,6 +87,15 @@ header {
     background-color: rgb(40, 40, 40);
     box-shadow: 0 0 10px 2px rgb(0, 0, 0);
     border-radius: 5px;
+}
+
+#contact-form{
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    background-color: rgb(32, 32, 32);
+    padding: 35px;
+    box-sizing: border-box;
 }
 
 

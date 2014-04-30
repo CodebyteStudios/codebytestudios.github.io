@@ -5,10 +5,10 @@ title: Codebyte Studios - Game Development Studio
 <div id="posts">
     <h1>Blog Posts</h1>
     {% for posts in paginator.posts %}
+        <h4 class="date-header">{{posts.date | date: "%B %d, %Y"}}</h4>
         <h3>{{posts.title}}</h3>
-        <h4>{{posts.date | date: "%B %d, %Y"}}</h4>
         <p>{{posts.excerpt}}</p>
-        <a href="{{posts.url}}">Read More...</a>
+        <a href="{{posts.url}}" style="color: rgb(48, 172, 255);">Read More...</a>
         <br />
     {% endfor %}
 </div>
