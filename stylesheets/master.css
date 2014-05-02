@@ -75,28 +75,47 @@ h4.date-header:after {
 	border-style: solid;
 	border-color: #666 #666 transparent transparent;
 }
-
-/***** Contact.html *****/
-/* Hidden thank you message */
-#thank_you {
-    display: none;
-    width: 25%;
-    position: fixed;
-    top: 30%;
-    left: 0;
-    right: 0;
+/***** About Us *****/
+/***** Our Team *****/
+#content-team {
+    min-width: 1000px;
     margin: 0 auto;
-    padding: 25px;
-    background-color: rgb(40, 40, 40);
-    box-shadow: 0 0 10px 2px rgb(0, 0, 0);
-    border-radius: 5px;
 }
+#members {
+    min-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+#member {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    display: inline-table;
+    margin-right: 20px;
+    height: 300px;
+    width: 350px;
+    background-color: rgb(40, 40, 40);
+    padding: 20px;
+}
+#member p {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+}
+#member li {
+    padding-left: 10px;
+    text-align: left;
+}
+#divider {
+    width: 390px;
+    margin: -20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+/***** Contact *****/
 /* Contact Form CSS */
 #contact-wrapper {
     margin: 0 auto;
     width: 60%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
     background-color: rgb(40, 40, 40);
     padding: 35px;
     box-sizing: border-box;
@@ -142,4 +161,25 @@ h4.date-header:after {
 
 .contactSend:active{
     background-color: rgb(215, 215, 215);
+}
+
+.teamInset{
+    background-color: rgb(35, 35, 35);
+    width: 360px;
+    margin: -10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -4px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.teamAbout{
+    background-color: rgb(35, 35, 35);
+    width: 370px;
+    height: 160px;
+    margin: -20px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.2), inset 0 -4px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
