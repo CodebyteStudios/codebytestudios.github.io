@@ -98,7 +98,7 @@ h4.date-header:after {
     width: 100%;
 }
 #members h1 {
-    margin-bottom: 0;
+    margin-bottom: 3px;
 }
 .member {
     top: 5px;
