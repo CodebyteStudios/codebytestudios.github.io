@@ -143,6 +143,7 @@ h4.date-header:after {
     position: absolute;
     left: 0;
     right: 0;
+    top: auto;
     margin: 0 auto;
     visibility: visible;
     opacity: 1;
