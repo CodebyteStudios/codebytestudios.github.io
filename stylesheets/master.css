@@ -103,9 +103,15 @@ h4.date-header:after {
     height: 75px;
     width: 32%;
     background-color: rgb(40, 40, 40);
-    border-bottom: 5px solid rgb(30, 30, 30);
     padding: 5px;
     text-align: center;
+}
+.wesley, .cameron, .zach {
+    border-bottom: 5px solid rgb(30, 30, 30);
+}
+
+.wesley:hover {
+    border-bottom: 0px;
 }
 .wesley:hover #contentWesley {
     visibility: visible;
@@ -121,7 +127,7 @@ h4.date-header:after {
     visibility: hidden;
     opacity: 0;
     position: relative;
-    width: 100%;
+    width: 335px;
     height: 0px;
     background-color: rgb(40, 40, 40);
     left: -5px;
@@ -132,11 +138,10 @@ h4.date-header:after {
         visibility: hidden;
         opacity: 0;
         position: relative;
-        width: 100%;
+        width: 325px;
         height: 0px;
         background-color: rgb(40, 40, 40);
         left: -5px;
-        top: -2px;
     }
 }
 .cameron:hover #contentCameron {
