@@ -97,6 +97,9 @@ h4.date-header:after {
     padding: 0;
     width: 100%;
 }
+#members h1 {
+    margin-bottom: 0;
+}
 .member {
     top: 5px;
     float: left;
