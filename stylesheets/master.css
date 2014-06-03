@@ -2,6 +2,7 @@
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+p{margin:0; padding:0;}
 .wrapper {
     opacity:0;  /* make things invisible upon start */
     -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -112,7 +113,7 @@ h4.date-header:after {
     opacity: 1;
     height: 200px;
     width: 1000px;
-    transition: opacity 500ms, height 500ms, width 500ms;
+    transition: opacity 500ms, height 600ms, width 500ms;
     transition-delay: 0s, 0s, .5s;
 }
 #contentWesley {
@@ -120,34 +121,46 @@ h4.date-header:after {
     opacity: 0;
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 0px;
     background-color: rgb(40, 40, 40);
     left: -5px;
 }
 .cameron:hover #contentCameron {
-    opacity: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     visibility: visible;
-    transition: opacity 500ms;
+    opacity: 1;
+    height: 200px;
+    width: 1000px;
+    transition: opacity 500ms, height 600ms, width 500ms;
+    transition-delay: 0s, 0s, .5s;
 }
 #contentCameron {
     visibility: hidden;
     opacity: 0;
     position: relative;
-    width: 100%;
-    height: 100px;
+    width: 333px;
+    height: 0px;
     background-color: rgb(40, 40, 40);
     left: -5px;
 }
 .zach:hover #contentZach {
+    margin: 0 auto;
+    visibility: visible;
     opacity: 1;
-    transition: opacity 500ms;
+    height: 200px;
+    width: 1000px;
+    transition: opacity 500ms, height 600ms, width 500ms;
+    transition-delay: 0s, 0s, .5s;
 }
 #contentZach {
     padding: 5px;
     opacity: 0;
     position: relative;
-    width: 100%;
-    height: 100px;
+    width: 333px;
+    height: 0px;
     background-color: rgb(40, 40, 40);
     left: -5px;
 }
