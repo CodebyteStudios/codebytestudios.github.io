@@ -1,36 +1,48 @@
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.wrapper {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:500ms;
+    -moz-animation-duration:500ms;
+    animation-duration:500ms;
+}
 /***** General CSS for whole page *****/
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(45, 45, 45);
     color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/***** Header CSS *****/
+/***** Header and Navi CSS *****/
 header {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    text-align: center;
-    background-color: rgb(30, 30, 30);
+    font-size: 20px;
+    max-width: 1000px;
     margin: 0 auto;
-    margin-bottom: 40px;
-    height: 64px;
-    width: 100%;
-    min-width: 1000px;
 }
 
 /***** Keep the site looking nice on all desktop screen sizes *****/
 .wrapper {
-    min-width: 800px;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 /***** Blog Posts (index.html) *****/
 #posts {
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
     background-color: rgb(40, 40, 40);
-    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
     text-align: justify;
-    min-width: 800px;
-    width: 50%;
     margin: 0 auto;
     padding: 25px;
 }
@@ -78,54 +90,89 @@ h4.date-header:after {
 /***** About Us *****/
 /***** Our Team *****/
 #content-team {
-    min-width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 #members {
-    min-width: 1200px;
+    padding: 0;
     width: 100%;
+}
+.member {
+    top: 5px;
+    float: left;
+    height: 75px;
+    width: 32%;
+    background-color: rgb(40, 40, 40);
+    padding: 5px;
     text-align: center;
 }
-#member {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
-    display: inline-table;
-    margin-right: 20px;
-    height: 300px;
-    width: 350px;
-    background-color: rgb(40, 40, 40);
-    padding: 20px;
+.wesley:hover #contentWesley {
+    visibility: visible;
+    opacity: 1;
+    height: 200px;
+    width: 1000px;
+    transition: opacity 500ms, height 500ms, width 500ms;
+    transition-delay: 0s, 0s, .5s;
 }
-#member p {
+#contentWesley {
+    border-top: 5px solid rgb;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+    left: -5px;
+}
+.cameron:hover #contentCameron {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 500ms;
+}
+#contentCameron {
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+    left: -5px;
+}
+.zach:hover #contentZach {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+#contentZach {
+    padding: 5px;
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+    left: -5px;
+}
+#memberContent h1 {
+    text-align: center;
+}
+#memberContent p {
     padding-left: 5px;
     padding-right: 5px;
     text-align: left;
-}
-#member li {
-    padding-left: 10px;
-    text-align: left;
-}
-#divider {
-    width: 390px;
-    margin: -20px;
-    margin-top: 0px;
-    margin-bottom: 10px;
 }
 /***** Contact *****/
 /* Contact Form CSS */
 #contact-wrapper {
     margin: 0 auto;
-    width: 60%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
     background-color: rgb(40, 40, 40);
     padding: 35px;
     box-sizing: border-box;
     overflow: hidden;
 }
-#contact-form {
-    width: 100%;
-    float: left;
-}
-.contactInput{
+.contactInput {
+    background-color: rgb(28, 28, 28);
+    color: rgb(153, 153, 153);
     padding: 5px;
     font-size: 15px;
     font-family: Arial;
@@ -133,8 +180,13 @@ h4.date-header:after {
     border: none;
     box-sizing: border-box;
 }
-.contactInput:hover{
-    background-color: rgb(235, 235, 235);
+.contactInput:hover {
+    background-color: rgb(33, 33, 33);
+    transition: background-color 500ms;
+}
+.contactInput:focus{
+    background-color: rgb(33, 33, 33);
+    transition: background-color 500ms;
 }
 .contactTextInput {
     padding-top: 3px;
@@ -143,27 +195,29 @@ h4.date-header:after {
     margin-bottom: 4px;
     width: 49%;
 }
-.contactTextbox{
+.contactTextbox {
     padding: 4px;
     width: 100%;
     resize: none;
 }
-.contactSend{
+.contactSend {
+    font-size: 12px;
     width: 100%;
     height: 40px;
     border: none;
     outline: none;
-    background-color: rgb(255, 255, 255);
+    color: rgb(153, 153, 153);
+    background-color: rgb(28, 28, 28);
 }
-.contactSend:hover{
-    background-color: rgb(235, 235, 235);
+.contactSend:hover {
+    background-color: rgb(33, 33, 33);
+    transition: background-color 500ms;
+}
+.contactSend:active {
+    background-color: rgb(20, 20, 20);
 }
 
-.contactSend:active{
-    background-color: rgb(215, 215, 215);
-}
-
-.teamInset{
+.teamInset {
     background-color: rgb(35, 35, 35);
     width: 360px;
     margin: -10px;
