@@ -97,9 +97,6 @@ h4.date-header:after {
     padding: 0;
     width: 100%;
 }
-#members h1 {
-    margin-bottom: 3px;
-}
 .member {
     top: 5px;
     float: left;
@@ -129,6 +126,18 @@ h4.date-header:after {
     background-color: rgb(40, 40, 40);
     left: -5px;
 }
+@-moz-document url-prefix() {
+    #contentWesley {
+        padding-right: 10px;
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        width: 100%;
+        height: 0px;
+        background-color: rgb(40, 40, 40);
+        left: -5px;
+    }
+}
 .cameron:hover #contentCameron {
     position: absolute;
     left: 0;
@@ -149,6 +158,19 @@ h4.date-header:after {
     height: 0px;
     background-color: rgb(40, 40, 40);
     left: -5px;
+    top: -2px;
+}
+@-moz-document url-prefix() {
+    #contentCameron {
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        width: 330px;
+        height: 0px;
+        background-color: rgb(40, 40, 40);
+        left: -5px;
+        top: -2px;
+    }
 }
 .zach:hover #contentZach {
     margin: 0 auto;
@@ -168,13 +190,16 @@ h4.date-header:after {
     background-color: rgb(40, 40, 40);
     left: -5px;
 }
-#memberContent h1 {
-    text-align: center;
-}
-#memberContent p {
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: left;
+@-moz-document url-prefix() {
+    #contentZach {
+        opacity: 0;
+        position: relative;
+        width: 330px;
+        height: 0px;
+        background-color: rgb(40, 40, 40);
+        left: -5px;
+        top: -2px;
+    }
 }
 /***** Contact *****/
 /* Contact Form CSS */
