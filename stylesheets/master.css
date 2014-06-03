@@ -111,7 +111,7 @@ h4.date-header:after {
 }
 
 .wesley:hover {
-    border-bottom: 0px;
+    border-bottom: 0px solid rgb(45, 45, 45);
 }
 .wesley:hover #contentWesley {
     visibility: visible;
@@ -142,6 +142,7 @@ h4.date-header:after {
         height: 0px;
         background-color: rgb(40, 40, 40);
         left: -5px;
+        top: -6px;
     }
 }
 .cameron:hover #contentCameron {
