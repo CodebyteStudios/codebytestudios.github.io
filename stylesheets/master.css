@@ -103,6 +103,7 @@ h4.date-header:after {
     height: 75px;
     width: 32%;
     background-color: rgb(40, 40, 40);
+    border-bottom: 5px solid rgb(30, 30, 30);
     padding: 5px;
     text-align: center;
 }
@@ -115,7 +116,6 @@ h4.date-header:after {
     transition-delay: 0s, 0s, .5s;
 }
 #contentWesley {
-    border-top: 5px solid rgb;
     visibility: hidden;
     opacity: 0;
     position: relative;
