@@ -107,6 +107,7 @@ h4.date-header:after {
     text-align: center;
 }
 .wesley, .cameron, .zach {
+    z-index: 1;
     border-bottom: 5px solid rgb(30, 30, 30);
 }
 
@@ -134,6 +135,7 @@ h4.date-header:after {
 }
 @-moz-document url-prefix() {
     #contentWesley {
+        z-index: -1;
         padding-right: 10px;
         visibility: hidden;
         opacity: 0;
