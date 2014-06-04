@@ -179,6 +179,10 @@ h4.date-header:after {
     width: 330px;
     height: 0px;
     background-color: rgb(40, 40, 40);
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    top: -7px;
 }
 @-moz-document url-prefix() {
     #contentMiddle {
@@ -213,7 +217,7 @@ h4.date-header:after {
     width: 330px;
     height: 0px;
     background-color: rgb(40, 40, 40);
-    left: 15px;
+    left: 0px;
 }
 @-moz-document url-prefix() {
     #contentRight {
