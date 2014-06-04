@@ -102,7 +102,7 @@ h4.date-header:after {
     margin-right: -4px;
     display: inline-block;
     height: 75px;
-    width: 332px;
+    width: 331px;
     background-color: rgb(40, 40, 40);
     text-align: center;
 }
@@ -111,7 +111,7 @@ h4.date-header:after {
     margin-right: -4px;
     display: inline-block;
     height: 75px;
-    width: 331px;
+    width: 329px;
     background-color: rgb(40, 40, 40);
     text-align: center;
 }
@@ -120,7 +120,7 @@ h4.date-header:after {
     margin-right: -4px;
     display: inline-block;
     height: 75px;
-    width: 332px;
+    width: 331px;
     background-color: rgb(40, 40, 40);
     text-align: center;
 }
@@ -159,12 +159,15 @@ h4.date-header:after {
         top: -7px;
     }
 }
+.memberMiddle:hover {
+    border-bottom: 5px solid rgb(40, 40, 40);
+}
 .memberMiddle:hover #contentMiddle {
     visibility: visible;
     opacity: 1;
     height: 200px;
     width: 1000px;
-    left: -340px;
+    left: -337px;
     transition: opacity 500ms, height 600ms, width 500ms, left 500ms;
     transition-delay: 0s, 0s, .5s, .5s;
 }
@@ -175,7 +178,6 @@ h4.date-header:after {
     width: 330px;
     height: 0px;
     background-color: rgb(40, 40, 40);
-    left: -5px;
 }
 @-moz-document url-prefix() {
     #contentMiddle {
@@ -186,7 +188,7 @@ h4.date-header:after {
         height: 0px;
         background-color: rgb(40, 40, 40);
         left: -5px;
-        top: -2px;
+        top: -7px;
     }
 }
 .memberRight:hover #contentRight {
