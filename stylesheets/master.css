@@ -98,6 +98,9 @@ h4.date-header:after {
     padding: 0;
     width: 100%;
 }
+#members p {
+    text-align: left;
+}
 .memberLeft {
     position: relative;
     margin-right: -4px;
