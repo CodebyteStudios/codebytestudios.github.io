@@ -97,12 +97,12 @@ h4.date-header:after {
 #members {
     padding: 0;
     width: 100%;
-    clear: both;
 }
 #members p {
     text-align: left;
 }
 .memberLeft {
+    float: left;
     position: relative;
     margin-right: -4px;
     display: inline-block;
@@ -112,17 +112,19 @@ h4.date-header:after {
     text-align: center;
 }
 .memberMiddle {
+    float: left;
     position: relative;
     margin-right: -4px;
     display: inline-block;
     height: 75px;
-    width: 329px;
+    width: 331px;
     background-color: rgb(40, 40, 40);
     text-align: center;
 }
 .memberRight {
+    float: left;
     position: relative;
-    margin-right: -4px;
+    margin-left: 4px;
     display: inline-block;
     height: 75px;
     width: 331px;
