@@ -90,7 +90,7 @@ h4.date-header:after {
 }
 /***** About Us *****/
 
-/***** Our Team *****/
+/***** Our Team *****
 #content-team {
     max-width: 1000px;
     margin: 0 auto;
@@ -240,6 +240,7 @@ h4.date-header:after {
         top: -7px;
     }
 }
+/
 /***** Contact *****/
 /* Contact Form CSS */
 #contact-wrapper {
