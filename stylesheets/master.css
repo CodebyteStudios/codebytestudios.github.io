@@ -93,15 +93,15 @@ h4.date-header:after {
   color: rgb(255, 255, 255);
 }
 #wesley {
-  min-width: 500px;
+  max-width: 500px;
   float: left;
 }
 #cameron {
-  min-width: 500px;
+  max-width: 500px;
   float: right;
 }
 #zach {
-  min-width: 500px;
+  max-width: 500px;
   float: left;
 }
 
