@@ -99,6 +99,7 @@ h4.date-header:after {
 #cameron {
   max-width: 500px;
   float: right;
+  clear: both;
 }
 #zach {
   max-width: 500px;
