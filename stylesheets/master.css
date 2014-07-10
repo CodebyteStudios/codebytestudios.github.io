@@ -94,16 +94,13 @@ h4.date-header:after {
 }
 #wesley {
   max-width: 500px;
-  float: left;
 }
 #cameron {
   max-width: 500px;
-  float: right;
-  clear: both;
+  text-align: right;
 }
 #zach {
   max-width: 500px;
-  float: left;
 }
 
 /***** Contact *****/
